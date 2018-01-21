@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Script shows specified image</title>
+<link rel="stylesheet" type="text/css" href="/css/styles.css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+	<div class="center">
+		<h2><a th:href="@{/uploaded}">Click here to previous page where you can choose image to show</a></h2>
+	</div> 
+	
+	<div class="center2">
+		<p th:text="${path}">text</p>
+	</div>
+<!--
+	<div class="center2">
+		<img th:src="@{/images/0.jpg}" />
+	</div>
+	<div class="center2">
+		<img src="@{${path}}" />
+	</div>
+-->
+</body>
+</html>
+
+

@@ -1,0 +1,53 @@
+@charset "UTF-8"; 
+body {
+    background-color: #80ffdf;
+}
+.center {
+	margin: auto;
+	max-width: 60%;
+	border: 3px solid #000000;
+	margin: 10px auto;
+	padding: 2px;
+}
+.image {
+	margin: 10px auto;
+	display: block;
+}
+h2 {
+	text-align: center;
+}
+.wrapper {
+	margin-top: 10px;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+}
+.label {
+	vertical-align:middle;
+}
+.button {
+  border-style: solid;
+  border-width : 1px 1px 1px 1px;
+  text-decoration : none;
+  padding : 4px;
+  border-color : #000000
+}
+p {
+	text-align: center;
+	display: block;
+	color: #000000;
+	margin: 1px;
+}
+.block {
+	display:block;
+	text-align: center;
+}
+.center2 {
+	margin:auto;
+	padding:auto;
+	border: 3px solid #000000;
+	align-content: center;
+	max-width: 50%;
+	margin-left: auto;
+    margin-right: auto;
+}

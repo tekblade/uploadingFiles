@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Loading Image</title>
+<link rel="stylesheet" type="text/css" href="/css/styles.css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+	<div class="center">
+		<h2>Loading Image</h2>
+	 		<form  th:action="@{/upload}" method="post" enctype="multipart/form-data">		
+				<div class="wrapper">
+					<label for="name" class="label">To load Image</label><br /><label for="name">The button acts as Image chooser:   <input type="file" class="file" name="file"/></label><br /><button type="submit" name="save"  th:text="@{submit the button to send IMAGE}"></button>
+				</div>
+			</form>
+		<h2><a th:href="@{/uploaded}" class="button">CLICK TO REDIRECT TO IMAGE MANAGER</a></h2>
+	</div>
+</body>
+</html>

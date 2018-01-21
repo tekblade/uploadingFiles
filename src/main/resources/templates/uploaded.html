@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Uploaded Pictures</title>
+<link rel="stylesheet" type="text/css" href="/css/styles.css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+	<div class="center">	
+		<h2>Uploaded Files:</h2>
+		<h2><a th:href="@{/upload}" class="button">CLICK ME TO BACK TO THE PREVIOUS PAGE</a></h2>		
+		<p align="center">IMAGES HAS BEEN UPLOADED TO C:\IMAGES</p>
+		<p align="center">PLEASE CHOOSE THE IMAGE THAT YOU WANT SEE</p>											
+		<form th:action="@{/showimage}" method="POST">
+			<label class="block" for="${image.intValue()}">	CHOOSE THE IMAGE
+				<select name="choosenimage">
+					<option  th:each="image : ${images}" id="${image.intValue()}" th:value="${image.intValue()}" th:text="${image.intValue()}">
+						<p th:text="${image.intValue()}">Image's number</p>
+					</option>					
+				</select>						
+				<button type="submit" name="save"  th:text="@{Submit to show specified image}"></button>			
+			</label>
+		</form>													
+	</div>		
+</body>
+</html>
