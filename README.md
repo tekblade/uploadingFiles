@@ -9,8 +9,8 @@ BUT - thymeleaf showimage.html (Thymeleaf used) reads images to view in showimag
 I tried to manage it - much time spent- and I've abandoned it. My observations are that showimage.html reads data from previous application's runtime (under build subfolders).
 The Controller works with specified path properly. The only problem is reading proper folder by showimage.html.
 # Used: Gradle(STS)/Spring/Thymeleaf. JavaScript isn't used in the project.
-# Application's start:
+Steps to run application
 # CMD/Windows 10
 # gradle wrapper
 # gradlew bootrun  // starting the application Connecting: http://localhost:8080/upload
-netstat -a -o -n => taskkill /F /PID <PID>  // Used to stop application
+# netstat -a -o -n => taskkill /F /PID <PID>  // Used to stop application
