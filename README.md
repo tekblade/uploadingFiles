@@ -1,6 +1,6 @@
 # uploadingFiles
-Uploading Images  with the browser
-# Please README.md document
+Uploading Images  with the browser </ br>
+Please README.md document
 # there are folowing worth to mention problems I met.
 The path to the folder created makes very hard to manage images. 
 # C:\Users\lukas\workspace\uploadingFiles\src\main\resources\images   - I recommend to change this path to suit your machine's local path
