@@ -3,7 +3,10 @@ Uploading Images  with the browser
 #Please README.md document
 There are folowing worth to mention problems I met.
 The path to the folder created makes very hard to manage images. 
-# C:\Users\lukas\workspace\uploadingFiles\src\main\resources\images   - I recommend to change this path to suit your machine's local path
+----------------------------------------------------------------------------------------------------------------------
+C:\Users\lukas\workspace\uploadingFiles\src\main\resources\images   - I recommend to change this path to suit your machine's local path
+---------------------------------------------------------------------------------------------------------------------
+
 This one direcotry works properly with all controllers methods from "PictureUploadController".
 BUT - thymeleaf showimage.html (Thymeleaf used) reads images to view in showimage.html script from path under build folder. 
 I tried to manage it - much time spent- and I've abandoned it. My observations are that showimage.html reads data from previous application's runtime (under build subfolders).
