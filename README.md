@@ -14,3 +14,5 @@ Steps to run application
 # gradle wrapper
 # gradlew bootrun  // starting the application Connecting: http://localhost:8080/upload
 # netstat -a -o -n => taskkill /F /PID <PID>  // Used to stop application
+---------------------------------------------------------------------------------------- 
+Not modified the size of Image's standard's configuration
