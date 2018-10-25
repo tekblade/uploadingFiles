@@ -46,8 +46,6 @@ p {
 	margin:auto;
 	padding:auto;
 	border: 3px solid #000000;
-	align-content: center;
-	max-width: 50%;
-	margin-left: auto;
-    margin-right: auto;
+	text-align: center;
+	max-width: 60%;
 }
