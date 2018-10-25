@@ -39,10 +39,10 @@ public class PictureUploadController {
 	public void initData() throws IOException {		
 		service=new ImageService();
     	File checkFile;
-		checkFile=new File("C:\\Users\\lukas\\workspace\\uploadingFiles\\src\\main\\resources\\images");   	
+		checkFile=new File("C:\\Users\\luce\\workspace2\\uploadingFiles\\src\\main\\resources\\static\\images");   	
     	if(checkFile.exists())
     		FileUtils.deleteDirectory(checkFile);
-    	imageDir=new File("C:\\Users\\lukas\\workspace\\uploadingFiles\\src\\main\\resources\\images"); 
+    	imageDir=new File("C:\\Users\\luce\\workspace2\\uploadingFiles\\src\\main\\resources\\static\\images"); 
     	imageDir.mkdirs();
     }
 	/*_________________________________________________________*/
@@ -91,7 +91,7 @@ public class PictureUploadController {
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	private static String generateExtension(String choosenImage) {
-		String fileName="C:\\Users\\lukas\\workspace\\uploadingFiles\\src\\main\\resources\\images\\"+choosenImage+".jpg";
+		String fileName="C:\\Users\\luce\\workspace2\\uploadingFiles\\src\\main\\resources\\static\\images"+choosenImage+".jpg";
 		return fileName;
 	}
 }
