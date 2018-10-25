@@ -7,10 +7,10 @@ The main problem is that this small application does read images from the previo
 
 --------------------------------------------------------------------------------------
 Steps to run application
-CMD/Windows 10
-gradle wrapper
-gradlew bootrun  // starting the application Connecting: http://localhost:8080/upload
-netstat -a -o -n => taskkill /F /PID <PID>  // Used to stop application
+#CMD/Windows 10
+#gradle wrapper
+#gradlew bootrun  // starting the application Connecting: http://localhost:8080/upload
+#netstat -a -o -n => taskkill /F /PID <PID>  // Used to stop application
 
 ---------------------------------------------------------------------------------------- 
 My recommendation:
