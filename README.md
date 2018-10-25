@@ -2,7 +2,7 @@
 #Uploading Images  with the browser
 #Please README.md document
 There are folowing worth to mention problems I met.
-The path to the folder created makes very hard to manage images - Secuirty(Access) Issue 
+The path to the folder created makes very hard to manage images 
 ----------------------------------------------------------------------------------------------------------------------
 C:\Users\lukas\workspace\uploadingFiles\src\main\resources\images   - I am recommending to change this path to suit your machine's local path
 ---------------------------------------------------------------------------------------------------------------------
