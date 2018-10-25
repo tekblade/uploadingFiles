@@ -74,7 +74,7 @@ public class PictureUploadController {
 	public String showimage(Model model, HttpServletRequest request) {
 		choosenImage=request.getParameter("choosenimage");
 		String imageName=generateExtension(choosenImage);
-		model.addAttribute("path", imageName); 
+		model.addAttribute("path", "images/0.jpg"); // The issue is here. It reads images from the previous run. Images Counter matches current run
 		return "showimage";
 	}
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
