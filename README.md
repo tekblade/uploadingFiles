@@ -15,4 +15,4 @@ Steps to run application
 
 ---------------------------------------------------------------------------------------- 
 My recommendation:
-there should be implemented servlet handler for images. Or there is some security Issue
+there should be implemented servlet handler for images. or/and there is some security Issue
