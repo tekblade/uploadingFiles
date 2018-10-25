@@ -1,13 +1,9 @@
 There are folowing worth to mention problem I met:
 The path to the folder created makes very hard to manage images 
 ----------------------------------------------------------------------------------------------------------------------
-C:\Users\luce\workspace2\uploadingFiles\src\main\resources\images - I am recommending to change this path to suit your machine's local path
+C:\Users\luce\workspace2\uploadingFiles\src\main\resources\static\images - I am recommending to change this path to suit your machine's local path
 ---------------------------------------------------------------------------------------------------------------------
-
-This one direcotry works properly with all controllers methods from "PictureUploadController".
-BUT - thymeleaf showimage.html (Thymeleaf used) reads images to view in showimage.html script from path under build folder. 
-I tried to manage it - much time spent- and I've abandoned it. My observations are that showimage.html reads data from previous application's runtime (under build subfolders).
-The Controller works with specified path properly. The only problem is reading proper folder by showimage.html.
+The main problem is that this small application does read images from the previous applications run. 
 Steps to run application
 # CMD/Windows 10
 # gradle wrapper
