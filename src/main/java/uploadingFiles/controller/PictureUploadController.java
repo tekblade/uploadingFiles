@@ -91,7 +91,7 @@ public class PictureUploadController {
 	}
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	private static String generateExtension(String choosenImage) {
-		String fileName="C:\\Users\\luce\\workspace2\\uploadingFiles\\src\\main\\resources\\static\\images"+choosenImage+".jpg";
+		String fileName="C:\\Users\\luce\\workspace2\\uploadingFiles\\src\\main\\resources\\static\\images\\"+choosenImage+".jpg";
 		return fileName;
 	}
 }
