@@ -74,7 +74,7 @@ public class PictureUploadController {
 	public String showimage(Model model, HttpServletRequest request) {
 		choosenImage=request.getParameter("choosenimage");
 		String imageName=generateExtension(choosenImage);
-		model.addAttribute("path", "images/0.jpg"); // The issue is here. It reads images from the previous run. Images Counter matches current run
+		model.addAttribute("path", getRelativePath(imageName)); // The issue is here. It reads images from the previous run. Images Counter matches current run
 		return "showimage";
 	}
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -93,6 +93,12 @@ public class PictureUploadController {
 	private static String generateExtension(String choosenImage) {
 		String fileName="C:\\Users\\luce\\workspace2\\uploadingFiles\\src\\main\\resources\\static\\images\\"+choosenImage+".jpg";
 		return fileName;
+	}
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	private static String getRelativePath(String fullPath) {
+		String[] myArray=fullPath.split("\\\\");
+		String relativePath="\\images\\"+myArray[myArray.length-1];
+		return relativePath;
 	}
 }
 
