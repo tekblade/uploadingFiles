@@ -54,8 +54,8 @@ public class PictureUploadController {
 	@RequestMapping(value="/upload", method=RequestMethod.POST)
 	public String onUpload(MultipartFile file) throws IOException {
 		String filename = file.getOriginalFilename();
-		File tempFile=File.createTempFile(imageDir.getPath()+ "\\" +Integer.toString(service.getImagesCounter()), ".jpg", imageDir);
-		synchronized(this) {
+		synchronized(this) {	
+			File tempFile=File.createTempFile(imageDir.getPath()+ "\\" +Integer.toString(service.getImagesCounter()), ".jpg", imageDir);
 			try(InputStream in =  file.getInputStream();
 					OutputStream out=new FileOutputStream(tempFile);){
 				IOUtils.copy(in, out);
