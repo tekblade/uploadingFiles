@@ -55,12 +55,15 @@ public class PictureUploadController {
 	public String onUpload(MultipartFile file) throws IOException {
 		String filename = file.getOriginalFilename();
 		File tempFile=File.createTempFile(imageDir.getPath()+ "\\" +Integer.toString(service.getImagesCounter()), ".jpg", imageDir);
-		try(InputStream in =  file.getInputStream();
-			OutputStream out=new FileOutputStream(tempFile);){
-			IOUtils.copy(in, out);
-		}		
-		generateFileName(tempFile);
-		return "redirect:/upload";
+		synchronized(this) {
+			try(InputStream in =  file.getInputStream();
+					OutputStream out=new FileOutputStream(tempFile);){
+				IOUtils.copy(in, out);
+			}		
+			generateFileName(tempFile);
+		}
+		return "redirect:/upload"; 
+		
 	}		
 	/*--------------------------------------------------------------*/
 	@RequestMapping(value="/uploaded")
