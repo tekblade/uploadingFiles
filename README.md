@@ -1,4 +1,4 @@
-There are folowing worth to mention problem I met:
+There is folowing worth to mention problem I met:
 The path to the folder created makes very hard to manage images 
 ----------------------------------------------------------------------------------------------------------------------
 C:\Users\luce\workspace2\uploadingFiles\src\main\resources\static\images - I am recommending to change this path to suit your machine's local path
