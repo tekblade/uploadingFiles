@@ -14,5 +14,4 @@ Steps to run application
 # netstat -a -o -n => taskkill /F /PID <PID>  // Used to stop application
 
 ---------------------------------------------------------------------------------------- 
-My recommendation:
-there should be implemented servlet handler for images. or/and there is some security Issue
+
