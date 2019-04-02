@@ -1,3 +1,5 @@
+# After unziping change the folder name(delete "-master")
+
 There is folowing worth to mention problem I met:
 The path to the folder created makes very hard to manage images 
 ----------------------------------------------------------------------------------------------------------------------
